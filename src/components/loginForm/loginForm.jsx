@@ -54,11 +54,11 @@ export class LoginForm extends Component {
     const error = document.createElement('div');
     error.classList.add('format-error')
     if (!this.checkLogin(name) && !this.checkPassword(password)){
-      error.textContent = 'Имя должно быть введено на латинице \n Пароль должен быть не короче 6 символов и содеожать числа, латинские прописные и строчные буквы и спецсимволы';
+      error.textContent = 'Имя должно быть введено на латинице \n Пароль должен быть не короче 6 символов и содержать числа, латинские прописные и строчные буквы и спецсимволы';
     }else if (!this.checkLogin(name)){
       error.textContent = 'Имя должно быть введено на латинице'
     }else{
-      error.textContent = 'Пароль должен быть не короче 6 символов и содеожать числа, латинские прописные и строчные буквы и спецсимволы'
+      error.textContent = 'Пароль должен быть не короче 6 символов и содержать числа, латинские прописные и строчные буквы и спецсимволы'
     }
     document.querySelector('.login-form').append(error)
   }
