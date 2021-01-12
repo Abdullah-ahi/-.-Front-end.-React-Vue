@@ -1,0 +1,137 @@
+.add-user-block{
+  border-right: 1px solid black;
+  width: 90%;
+  height: 100vh;
+}
+.user-data-container{
+  display: flex;
+}
+.user-info {
+  width: 10%;
+}
+.user-info-block-close-icon{
+  width: 40px !important;
+  height: 40px !important;
+}
+.user-info-block-close-link{
+  display: block;
+  position: absolute;
+  top: 142px;
+  right: 36%;
+}
+.add-user-btn{
+  margin-top: 15px !important;
+  width: 100%;
+}
+.add-user-form{
+  display: flex;
+  flex-direction: column;
+  transition: display 2s;
+  height: 100vh;
+}
+.user-input{
+  width: 30%;
+}
+.user-input div {
+  margin-bottom: 10px;
+}
+.user-info-textarea{
+  width: 40%;
+  height: 130px;
+  margin-bottom: 10px;
+}
+.user-info-textarea div {
+  height: 100%;
+  margin-bottom: 10px;
+}
+.show {
+  display: flex;
+}
+.hide {
+  display: none !important;
+}
+.users{
+  border-right: 1px solid black;
+  width: 89.95%;
+}
+.edit-btn{
+  width: 5% !important;
+  height: 38.4px !important;
+  border: none;
+  outline: none;
+  display: none !important;
+  transition: display 0.5s, background-color 0.5s, color 0.5s !important;
+}
+.users-item{
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 0 0 0 8px !important;
+  height: 40px;
+  margin-bottom: 15px;
+}
+.users-item:hover .edit-btn{
+  display: block !important;
+}
+.users-item:hover .switch-btn{
+  display: block !important;
+}
+.edit-btn:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+.form-control-btns{
+  height: 70px;
+  padding-top: 2%;
+  box-sizing: border-box;
+  background-color: aqua;
+}
+.cancel-user-add {
+  margin-right: 158px !important;
+}
+.switch-btn{
+  width: 5% !important;
+  height: 38.4px !important;
+  border: none;
+  outline: none;
+  display: none !important;
+}
+.switch-btn-item{
+  height: 100% !important;
+  width: 100% !important;
+  color: #000;
+  transition: display 0.5s, background-color 0.5s, color 0.5s !important;
+}
+.switch-btn:hover .switch-btn-item{
+  background-color: #000 !important;
+  color: #fff !important;
+}
+.users-item:hover{
+  background-color: aliceblue;
+  color: #000;
+}
+.user-info-open-block {
+  width: 40%;
+}
+.small-add-users-block{
+  width: 60%;
+}
+.small-users-block{
+  width: 59.99%;
+}
+.user-info-block{
+  padding-left: 30px;
+  font-size: 20px;
+  position: absolute;
+  top: 220px;
+}
+.surname{
+  margin-left: 30px;
+}
+.user-info-margin-item{
+  margin-right: 25px;
+}
+.user-add-error{
+  color: red;
+  margin-bottom: 10px;
+}

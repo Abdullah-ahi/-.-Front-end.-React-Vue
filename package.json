@@ -1,0 +1,49 @@
+{
+  "name": "-.-Front-end.-React-Vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode development",
+    "dev": "webpack-dev-server --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdullah-ahi/-.-Front-end.-React-Vue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abdullah-ahi/-.-Front-end.-React-Vue/issues"
+  },
+  "homepage": "https://github.com/Abdullah-ahi/-.-Front-end.-React-Vue#readme",
+  "devDependencies": {
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^4.5.1",
+    "mini-css-extract-plugin": "^1.3.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.11.1",
+    "webpack-dev-server": "^3.11.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "babel-loader": "^8.2.2",
+    "classnames": "^2.2.6",
+    "connected-react-router": "^6.8.0",
+    "history": "^4.10.1",
+    "immutable": "^4.0.0-rc.12",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-actions": "^2.6.5",
+    "webpack-cli": "^3.3.12"
+  }
+}

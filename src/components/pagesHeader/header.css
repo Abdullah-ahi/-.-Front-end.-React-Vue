@@ -1,0 +1,101 @@
+.header-content{
+  justify-content: space-between;
+}
+.page-header{
+  background-color: #2F4F4F !important;
+}
+.page-header-categories{
+  background-color: #fff !important;
+}
+.search-input{
+  background-color: #696969;
+  border-radius: 3px;
+  height: 39px;
+  width: 35%;
+  margin: 0 auto !important;
+}
+.search-input div {
+  height: 100%;
+}
+.header-users-block{
+  border: 1px solid #000;
+  position: absolute;
+  top: 100%;
+  right: 1%;
+  display: none;
+  background-color: #87CEFA;
+  background-attachment: scroll;
+  z-index: 1;
+}
+.header-profile-block{
+  border: 1px solid #000;
+  position: absolute;
+  top: 100%;
+  right: 13%;
+  display: none;
+  background-color: #87CEFA;
+  background-attachment: scroll;
+  z-index: 1;
+  padding: 5px 10px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+#header-users-input{
+  display: none;
+}
+#header-profile-input{
+  display: none;
+}
+#header-users-input:checked ~ .header-users-block {
+  display: block;
+}
+#header-profile-input:checked ~ .header-profile-block{
+  display: block;
+}
+.nav-link{
+  text-decoration: none;
+}
+.menu{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: #000;
+}
+.menu-content{
+  display: flex;
+  justify-content: center;
+}
+.header-users-icon{
+  margin-left: 160px;
+}
+.header-users-list{
+  padding-left: 10px;
+  padding-right: 16px;
+  margin-top: 10px;
+}
+.header-users-list-item{
+  list-style-type: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.current-login{
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+.log-in-icon{
+  width: 18px !important;
+  height: 18px !important;
+  margin-right: 2px;
+  margin-top: 3px;
+}
+.log-in-icon:hover{
+  transform: scale(1.09);
+}
+.log-in-icon:active{
+  color: white;
+  background-color: black;
+}
