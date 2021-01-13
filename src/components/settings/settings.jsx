@@ -49,10 +49,10 @@ export class Settings extends Component {
     })
   }
   handleUserAdd = (event, editId) => {
-    const { addUser, id, checkTel, checkPassword, checkLogin, Login, SignIn } = this.props
+    const { addUser, id, checkTel, checkPassword, checkLogin, checkAbout, Login, SignIn } = this.props
     const { name, surname, tel, about, password, btnIsVisible, formIsVisible } = this.state;
     const newUserId = editId !== undefined ? editId : id
-    if(!checkTel(tel) || !checkPassword(password) || !checkLogin(name) || !checkLogin(surname) || !checkLogin(about)){
+    if(!checkTel(tel) || !checkPassword(password) || !checkLogin(name) || !checkLogin(surname) || !checkAbout(about)){
       this.renderUserAddErrs(tel, password, name, surname, about)
       return
     }else{
@@ -63,7 +63,6 @@ export class Settings extends Component {
           err[0].remove()
         }
       }
-      debugger
       if (Login.login.newUserId !==undefined){
         if (Login.login.newUserId === editId){
           SignIn({name, password, newUserId: editId})
@@ -90,7 +89,7 @@ export class Settings extends Component {
     }
   }
   renderUserAddErrs = (tel, password, name, surname, about) => {
-    const { checkTel, checkPassword, checkLogin } = this.props
+    const { checkTel, checkPassword, checkLogin, checkAbout } = this.props
     let err = document.getElementsByClassName('user-add-error')
     let length = err.length
     if (err.length){
@@ -121,7 +120,7 @@ export class Settings extends Component {
           error.textContent = 'Пароль должен быть не короче 6 символов и содеожать числа, латинские прописные и строчные буквы и спецсимволы'
         }
       }else{
-        if (!checkLogin(about)){
+        if (!checkAbout(about)){
           error.textContent = 'Поле не может быть пустым и должно быть заполнено на латинице'
         }
       }

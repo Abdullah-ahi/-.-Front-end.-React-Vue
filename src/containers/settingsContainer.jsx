@@ -19,6 +19,19 @@ class settingsContainer extends PureComponent {
       return
     }
   }
+  checkAbout = (about) => {
+    let result;
+    if (about){
+      if (about.match(/^[a-zA-Z0-9_ ]*$/gi) === null){
+        result = false;
+      }else{
+        result = about === about.match(/^[a-zA-Z0-9_ ]*$/gi).join('');
+      }
+      return result;
+    }else{
+      return
+    }
+  }
 
   checkPassword = (password) => {
     let result;
@@ -47,7 +60,7 @@ class settingsContainer extends PureComponent {
   render(){
     const { addUser, users, id, delUser, SignIn, loginData, delAuthor, userId, currentUser } = this.props
     return (
-      <Settings checkTel={this.checkTel} checkPassword={this.checkPassword} checkLogin={this.checkLogin} addUser = {addUser} users={users} id={id} delUser={delUser} SignIn={SignIn} Login={loginData} delAuthor={delAuthor} userId={userId} currentUser={currentUser}/>
+      <Settings checkAbout={this.checkAbout} checkTel={this.checkTel} checkPassword={this.checkPassword} checkLogin={this.checkLogin} addUser = {addUser} users={users} id={id} delUser={delUser} SignIn={SignIn} Login={loginData} delAuthor={delAuthor} userId={userId} currentUser={currentUser}/>
     )
   }
 }
